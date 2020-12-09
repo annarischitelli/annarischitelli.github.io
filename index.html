@@ -1,54 +1,89 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
+
   <meta charset="UTF-8">
   <title>Anna Rischitelli</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <img src="../Images/Anna_1avatar_Crop.jpg" width="200" height="200">
-  <br>
 
-  <h1>Anna Rischitelli</h1>
-  <section>
-    <hr>
+    <!-- Bring in our bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<!-- Create navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Anna Rischitelli</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="temp.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="wind.html">Wind Speed</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- End of navigation bar -->
+
+    
+<!-- Beginning of Home Page Content -->
+   
+<!-- Summary: Latitude vs. X Box -->
+<br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h3 class="box-header">Summary: Latitude vs. X</h3>
+        <hr>
+        <img src="Resources/Fig1_Lat_v_Temp.png" alt="Latitude vs Max Temp" class="comparison-main-image" class="image"/>
+        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+      </div>
+<!-- End Summary Box (but keep on same row) -->
+<!-- Visualizations Box -->
+      <div class="col-md-5">
+        <div class="description-content">
+          <h3 class="box-header">Visualizations</h3>
+          <hr>
+            <a href="#"><img src="Resources/sloth.jpeg" class="viz-image" class="float" alt="Latitude v. Max Temp"></a>
+            <a href="#"><img src="Resources/sloth.jpeg" class="viz-image" class="float" alt="Latitude v. Humidity"></a>
+            <a href="#"><img src="Resources/sloth.jpeg" class="viz-image" class="float" alt="Latitude v. Cloudiness"></a>
+            <a href="#"><img src="Resources/sloth.jpeg" class="viz-image" class="float" alt="Latitude v. Wind Speed"></a>
+        </div>
+      </div>
+  </div>
+<!-- End Visualization Box -->
+
+
+<!-- Boiler plate requirements-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   
-    <p>
-      Experienced marketing manager with a demonstrated history of working in the sports industry. Skilled in statistical data analysis, sales, project management, content marketing, and presentations. 
-    </p>
-    <p>
-      I currently work for Parsons Xtreme Golf (PXG) as the Website Analytics & Marketing Manager. I am responsible for setting strategies for website visitors, optimizing purchase paths, CVRs and other key customer metrics, while also being responsible for consistent monitoring and reporting. I am the go-to expert for all things website for PXG, understanding consumer and market insights, digital marketing and advertising best practices.
-    </p>
-  </section>
-  <section>
-  <p>
-    Social Links:
-  </p>
-  <ul>
-    <li>Test</li>
-    <li>Test1</li>
-    <li>Test2</li>
-  </ul>
-</section>
-<table border="1">
-  <thead>
-    <tr>
-      <th colspan="4">Anna's Favorites</th>
-    </tr>
-    <tr>
-      <th>Favorite Activity</th>
-      <th>Favorite Music</th>
-      <th>Favorite Food</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Skiing</td>
-      <td>Portugal the Man</td>
-      <td>Garlic</td>
-    </tr>
-  </tbody>
-</table>
-</body>
+  </body>
 
-</html>
+  </html>
